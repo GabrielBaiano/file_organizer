@@ -1,0 +1,8 @@
+[project]
+name = "file_organizer"
+version = "1.0.0"
+description = "App Linux para organizar arquivos"
+authors = [
+  { name="GabrielBaiano", email="gabrielngama@gmail.com" }
+]
+readme = "README.md"
