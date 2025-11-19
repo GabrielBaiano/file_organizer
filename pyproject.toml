@@ -6,3 +6,7 @@ authors = [
   { name="GabrielBaiano", email="gabrielngama@gmail.com" }
 ]
 readme = "README.md"
+
+dependencies = [
+  watchdog
+]
