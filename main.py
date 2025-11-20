@@ -54,7 +54,7 @@ class OrganizerHandler(FileSystemEventHandler):
         unchanged_count = 0
         max_retries = 30 # 30 seconds timeout
 
-        while unchanged_count < 3: # Confirma 3 vezes que parou de mudar
+        while unchanged_count < 3: # Recount for security
             try:
                 if not file_path.exists():
                     return False
@@ -64,7 +64,7 @@ class OrganizerHandler(FileSystemEventHandler):
                 if current_size == historical_size and current_size > 0:
                     unchanged_count += 1
                 else:
-                    unchanged_count = 0 # Reseta se mudou
+                    unchanged_count = 0 # reestart count
                     
                 historical_size = current_size
                 time.sleep(1)
